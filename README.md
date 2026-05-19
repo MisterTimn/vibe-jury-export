@@ -1,4 +1,4 @@
-# Vibe Call Export
+# Vibe Jury Export
 
 Extract juror ratings from VI.BE platform into CSV for spreadsheet analysis.
 
