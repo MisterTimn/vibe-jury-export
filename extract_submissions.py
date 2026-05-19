@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Busker Street Submissions Extractor - VI.BE HAR to CSV
+VI.BE Jury Export - Extract submissions and jury ratings to CSV
 
 Usage:
     1. On VI.BE submissions page, open DevTools → Network tab
@@ -192,8 +192,8 @@ def main():
     print(f"Jurors: {', '.join(jurors)}")
     
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    csv_path = os.path.join(script_dir, f"busker_submissions_{timestamp}.csv")
-    csv_latest = os.path.join(script_dir, "busker_submissions_latest.csv")
+    csv_path = os.path.join(script_dir, f"submissions_{timestamp}.csv")
+    csv_latest = os.path.join(script_dir, "submissions_latest.csv")
     
     write_csv(rows, jurors, csv_path)
     write_csv(rows, jurors, csv_latest)

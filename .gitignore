@@ -1,2 +1,14 @@
+# Generated outputs
 *.csv
+
+# HAR exports (contain API responses with personal data)
 *.har
+
+# Spreadsheets
+*.ods
+*.xlsx
+.~lock.*
+
+# Raw data dumps
+*.html
+*.txt

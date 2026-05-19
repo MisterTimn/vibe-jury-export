@@ -1,11 +1,10 @@
-# Vibe Jury Export
+# vibe-jury-export
 
-Extract juror ratings from VI.BE platform into CSV for spreadsheet analysis.
+Extract jury ratings and submission data from VI.BE platform HAR exports to CSV.
 
 ## Quick Start
 
 ```bash
-cd ~/utils/busker-sheet
 python3 extract_submissions.py
 ```
 
@@ -24,21 +23,21 @@ python3 extract_submissions.py
    ```bash
    python3 extract_submissions.py
    # Or specify a HAR file:
-   python3 extract_submissions.py "vi.be_Archive [26-05-18 16-36-24].har"
+   python3 extract_submissions.py your_export.har
    ```
 
 3. **Open in LibreOffice Calc**
 
    ```bash
-   libreoffice busker_submissions_latest.csv
+   libreoffice submissions_latest.csv
    ```
 
 ## Output
 
-| File                                     | Description                           |
-| ---------------------------------------- | ------------------------------------- |
-| `busker_submissions_latest.csv`          | Always current (overwritten each run) |
-| `busker_submissions_YYYYMMDD_HHMMSS.csv` | Timestamped backup                    |
+| File                               | Description                           |
+| ---------------------------------- | ------------------------------------- |
+| `submissions_latest.csv`           | Always current (overwritten each run) |
+| `submissions_YYYYMMDD_HHMMSS.csv`  | Timestamped backup                    |
 
 ## CSV Columns
 
